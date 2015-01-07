@@ -1,0 +1,54 @@
+body{
+	text-align: center;
+	font-family: 'Avenir';
+	font-size: 0.8em;
+	header{
+		width: 60%;
+		margin: 0 auto;
+		border-bottom: 1px solid #6ECACF;
+		border-bottom-radius: 5px;
+		padding-bottom: 5px;
+		h1{
+			margin: 0;
+			small{
+				display: block;
+				font-size: 0.4em;
+			}
+		}
+	}
+	p{
+		font-size: 0.8em;
+	}
+	div{
+		width: 40%;
+		margin: 20px 10px;
+		display: inline-block;
+		background: #efefef;
+		border: 1px solid #efefef;
+		border-radius: 5px;
+	}
+	ul{
+		list-style: none;
+		padding-left: 0;
+	}
+	a{
+		text-decoration: none;
+		color: inherit;
+		&:visited{
+			color: inherit;
+		}
+		&:hover{
+			color: #6ECACF;
+		}
+	}
+	form{
+		input, textarea{
+			margin: 10px auto;
+			display: block;
+		}
+		input[type="submit"]{
+			border: none;
+			background: lighten(#6ECACF, 10)
+		}
+	}
+}
