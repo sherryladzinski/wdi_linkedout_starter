@@ -1,0 +1,9 @@
+<h2><%= @company.name%> </h2>
+<p> <%= @company.desc %>  </p>
+
+<%= render 'partials/form_message' %> 
+<ul>
+	<% @company.messages.each do |message| %>
+	<li> <%= message.body %> by <%= message.author %>  </li>
+	<% end %> 
+</ul>

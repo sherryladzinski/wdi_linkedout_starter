@@ -1,0 +1,11 @@
+<section>
+	<% @companies.each do |company| %>
+		<div>
+			<h2> <%= link_to company.name, company%></h2>
+			<ul class="links">
+			<li> <%= link_to 'Send love', new_company_message_path(company_id: company.id) %> </li>
+			<li> <%= link_to 'Visit their website', company.website %> </li>
+			</li> 	
+		</div>
+	<% end %>  
+</section>
